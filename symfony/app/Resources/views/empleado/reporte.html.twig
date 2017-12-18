@@ -1,0 +1,30 @@
+<div align="center">
+	<h1>Symplifica Reporte de Empleados - Empleador </h1>
+</div>
+<div>
+	<table align="center" border="1">
+	<tr>
+		<th>Nombre</th>
+		<th>Cedula</th>
+		<th>Sexo</th>
+		<th>Telefono</th>	
+		<th>Fecha Nacimiento</th>		
+		<th>Nombre Empleador</th>		
+	</tr>	
+	{% for empleado in empleados %}
+	<tr>
+		<td>{{ empleado.nombre }}</td>
+		<td>{{ empleado.cedula }}</td>
+		<td>{{ empleado.sexo }}</td>
+		<td>{{ empleado.telefono }}</td>
+		<td>{{ empleado.tipocontrato }}</td>
+		<td>{{ empleado.empleador}}</td>
+              
+    </tr>
+	{% endfor %}
+	</table>
+	
+	<div align="center" style="margin:25px;">
+		<a href="{{path('luis.symfony_inicio')}}"><button>Volver</button></a>
+	</div>
+</div>

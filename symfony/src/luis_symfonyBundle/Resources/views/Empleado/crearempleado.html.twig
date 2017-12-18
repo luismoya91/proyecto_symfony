@@ -1,0 +1,30 @@
+<div align="center">
+	<div><h2>Ingreso de Nuevo Empleado 111111111</h2></div></div>
+	{{form_start(form,{'attr':{'role':'form'}})}}
+	<div>
+		{{form_label(form.nombre)}}
+		{{form_widget(form.nombre)}}
+	</div>
+	<div>
+		{{form_label(form.cedula)}}
+		{{form_widget(form.cedula)}}
+	</div>
+	<div>
+		{{form_label(form.sexo)}}
+		{{form_widget(form.sexo)}}
+	</div>
+		<div>
+		{{form_label(form.telefono)}}
+		{{form_widget(form.telefono)}}
+	</div>
+		<div>
+		{{form_label(form.tipoContrato)}}
+		{{form_widget(form.tipoContrato)}}
+	</div>
+	<div>
+		{{form_widget(form.save)}}
+	</div>
+	<div>
+		{{form_end(form)}}
+	</div>
+</div> 

@@ -1,0 +1,7 @@
+luis.symfony:
+    resource: "@luis_symfonyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

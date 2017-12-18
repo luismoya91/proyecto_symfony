@@ -1,0 +1,49 @@
+luis.symfony_empleado:
+    resource: "@luis_symfonyBundle/Resources/config/routing/empleado.yml"
+    prefix:   /empleado
+    
+luis.symfony_empleado:
+    resource: "@luis_symfonyBundle/Resources/config/routing/empleador.yml"
+    prefix:   /empleador1
+
+luis.symfony_homepage:
+    path:     /
+    defaults: { _controller: luis_symfonyBundle:Default:inicio }
+    
+luis.symfony_inicio:
+    path:     /inicio
+    defaults: { _controller: luis_symfonyBundle:Default:inicio }
+
+luis.symfony_empleadon:
+    path:     /empleado
+    defaults: { _controller: luis_symfonyBundle:Default:empleado }
+
+luis.symfony_empleador:
+    path:     /empleador
+    defaults: { _controller: luis_symfonyBundle:Empleador:index }
+
+luis.symfony_reporte:
+    path:     /reporte
+    defaults: { _controller: luis_symfonyBundle:Default:reporte }
+
+luis.symfony_cempleado:
+    path:     /empleado/crear
+    defaults: { _controller: luis_symfonyBundle:Empleado:crearempleado }
+    methods: POST|GET
+
+luis.symfony_cempleadon:
+    path:     /empleado/create
+    defaults: { _controller: luis_symfonyBundle:Empleado:create }
+    methods: POST|GET     
+    
+luis.symfony_cempleador:
+    path:     /empleador/crear
+    defaults: { _controller: luis_symfonyBundle:Empleador:crearempleador }
+    methods: POST|GET
+
+luis.symfony_cempleadorn:
+    path:     /empleador/create
+    defaults: { _controller: luis_symfonyBundle:Empleador:create }
+    methods: POST|GET     
+
+    

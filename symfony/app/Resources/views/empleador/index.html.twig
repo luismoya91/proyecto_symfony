@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Empleadors list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Cedula</th>
+                <th>Sexo</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+                <th>Fechanac</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for empleador in empleadors %}
+            <tr>
+                <td><a href="#">{{ empleador.id }}</a></td>
+                <td>{{ empleador.nombre }}</td>
+                <td>{{ empleador.cedula }}</td>
+                <td>{{ empleador.sexo }}</td>
+                <td>{{ empleador.telefono }}</td>
+                <td>{{ empleador.direccion }}</td>
+                <td>{% if empleador.fechanac %}{{ empleador.fechanac|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">show</a>
+                        </li>
+                        <li>
+                            <a href="#">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="#">Create a new empleador</a>
+        </li>
+    </ul>
+{% endblock %}

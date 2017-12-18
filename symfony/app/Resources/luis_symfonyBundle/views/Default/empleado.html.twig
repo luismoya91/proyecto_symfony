@@ -1,0 +1,48 @@
+<div align="center">
+	<h1>Symplifica Gestion de Empleados - Empleador 12</h1>
+</div>
+<div>
+	<form action="" method="POST" >
+	<table align="center"  border="1">
+				<caption><h2>Ingrese un nuevo empleado:</h2></caption>
+				<tr>
+					<td><label>Nombre completo del empleado:</label></td>
+					<td><input type="text" name="nombre" required/></td>
+				</tr>
+				<tr>
+					<td><label>Sexo :</label></td>
+					<td><select name="sexo">
+						<option value="hombre">Masculino</option>
+						<option value="mujer">Femenino</Femenino>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td><label>Cedula:</label></td>
+					<td><input type="number" name="id" min="1" required/></td>
+				</tr>
+				<tr>
+					<td><label>Telefono:</label></td>
+					<td><input type="number" name="tel" required/></td>
+				</tr>
+				<tr>
+					<td><label>Tipo Contrato:</label></td>
+					<td><select name="contrato">
+						<option value="Ter_Inde">Termino Indefinido</option>
+						<option value="Ter_Defi">Termino Definido</option>
+						<option value="Ter_Parcial">Termino Parcial</option>
+						</select>
+					</td>
+				</tr>			
+	</table>
+</div>
+<div align="center">
+			<input type="submit" value="Registrar Empleado">
+</div>
+<div align="center">
+			<input type="reset" value="Limpiar Campos">
+</div>
+</form>
+<div align="center">
+			<a href="inicio"><button>Volver</button></a>
+</div>   

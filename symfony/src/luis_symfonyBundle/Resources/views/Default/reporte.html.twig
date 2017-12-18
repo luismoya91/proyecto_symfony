@@ -1,0 +1,27 @@
+<div align="center">
+	<h1>Symplifica Reporte de Empleados - Empleador 12</h1>
+</div>
+<div>
+	<table align="center" border="0">
+	<tr>
+		<th>Nombre</th>
+		<th>Cedula</th>
+		<th>Sexo</th>
+		<th>Telefono</th>
+		<th>Direccion</th>		
+		<th>Fecha Nacimiento</th>		
+		<th>ID Empleador</th>		
+	</tr>	
+	{% for empleado in empleados %}
+	<tr>
+		<td>{{ empleado.nombre }}</td>
+		<td>{{ empleado.cedula }}</td>
+		<td>{{ empleado.sexo }}</td>
+		<td>{{ empleador.telefono }}</td>
+		<td>{{ empleador.tipocontrato }}</td>
+		<td>{{ empleador.empleador_ced }}</td>
+              
+    </tr>
+	{% endfor %}
+	</table>
+</div>

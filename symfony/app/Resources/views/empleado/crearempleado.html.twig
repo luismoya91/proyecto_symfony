@@ -1,0 +1,36 @@
+<div align="center">
+		<div><h2>Ingreso de Nuevo Empleado</h2></div>
+	<table align="center" border="0">
+	<tr>		
+	{{form_start(form,{'attr':{'role':'form'}})}}
+		<th>{{form_label(form.nombre)}}	</th>
+		<td>{{form_widget(form.nombre)}}</td>
+	</tr>	
+	<tr>
+		<th>{{form_label(form.cedula)}}</th>
+		<td>{{form_widget(form.cedula)}}</td>
+	</tr>
+	<tr>
+		<th>{{form_label(form.sexo)}}</th>
+		<td>{{form_widget(form.sexo)}}</td>
+	</tr>
+	<tr>
+		<th>{{form_label(form.telefono)}}</th>
+		<td>{{form_widget(form.telefono)}}</td>
+	</tr>
+	<tr>
+		<th>{{form_label(form.tipoContrato)}}</th>
+		<td>{{form_widget(form.tipoContrato)}}</td>
+	</tr>
+	<tr>
+		<th>{{form_label(form.empleador)}}</th>
+		<td>{{form_widget(form.empleador)}}</td>
+	</tr>
+	</table>
+	<div style="margin:25px;">
+		{{form_end(form)}}
+	</div>
+	<div align="center" style="margin:25px;">
+		<a href="{{path('luis.symfony_inicio')}}"><button>Volver</button></a>
+	</div>
+</div> 

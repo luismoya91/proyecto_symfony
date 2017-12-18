@@ -1,0 +1,24 @@
+empleado_index:
+    path:     /
+    defaults: { _controller: "luis_symfonyBundle:Empleado:index" }
+    methods:  GET
+
+empleado_show:
+    path:     /{id}/show
+    defaults: { _controller: "luis_symfonyBundle:Empleado:show" }
+    methods:  GET
+
+empleado_new:
+    path:     /new
+    defaults: { _controller: "luis_symfonyBundle:Empleado:new" }
+    methods:  [GET, POST]
+
+empleado_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "luis_symfonyBundle:Empleado:edit" }
+    methods:  [GET, POST]
+
+empleado_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "luis_symfonyBundle:Empleado:delete" }
+    methods:  DELETE
